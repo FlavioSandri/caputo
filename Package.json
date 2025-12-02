@@ -1,0 +1,13 @@
+{
+  "name": "caputo-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio Apple-like de Flávio Caputo",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": ["portfolio", "apple", "webgl", "developer"],
+  "author": "Flávio Sandri Caputo",
+  "license": "MIT"
+}

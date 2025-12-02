@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flávio Caputo — Dev & Creator</title>
+    
+    <!-- Apple-like Meta -->
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Fonts (Apple uses SF Pro) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Apple-like Loading -->
+    <div class="apple-loader">
+        <div class="loader-logo">
+            <svg width="60" height="60" viewBox="0 0 60 60">
+                <path d="M30 5C16.2 5 5 16.2 5 30s11.2 25 25 25 25-11.2 25-25S43.8 5 30 5zm0 45C18.4 50 10 41.6 10 30S18.4 10 30 10s20 8.4 20 20-8.4 20-20 20z" fill="currentColor"/>
+                <path d="M30 15c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm0 25c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10z" fill="currentColor"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Navigation - Apple Style -->
+    <nav class="apple-nav">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#home" class="nav-logo">
+                <span class="logo-symbol">◉</span>
+                <span class="logo-text">caputo</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">
+                        <span class="link-text">Início</span>
+                        <span class="link-underline"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <span class="link-text">Sobre</span>
+                        <span class="link-underline"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#work" class="nav-link">
+                        <span class="link-text">Projetos</span>
+                        <span class="link-underline"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">
+                        <span class="link-text">Skills</span>
+                        <span class="link-underline"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <span class="link-text">Contato</span>
+                        <span class="link-underline"></span>
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Mobile Toggle -->
+            <button class="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Apple Style -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="gradient-circle"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <!-- Subtle Badge -->
+                <div class="hero-badge">
+                    <span class="badge-text">Disponível para projetos</span>
+                </div>
+                
+                <!-- Main Heading -->
+                <h1 class="hero-headline">
+                    <span class="line line-1">Olá, sou</span>
+                    <span class="line line-2">
+                        <span class="highlight">Flávio</span> Caputo
+                    </span>
+                    <span class="line line-3">Desenvolvedor & Criador</span>
+                </h1>
+                
+                <!-- Description -->
+                <p class="hero-description">
+                    Com 17 anos, transformo ideias em experiências digitais excepcionais. 
+                    Especializado em WebGL, Python e desenvolvimento moderno.
+                </p>
+                
+                <!-- Action Buttons -->
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary">
+                        <span>Ver Projetos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Vamos Conversar</span>
+                    </a>
+                </div>
+                
+                <!-- Stats (Apple-style) -->
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projetos</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Anos</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Dedicado</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Code Preview (Right side) -->
+            <div class="hero-preview">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <div class="window-title">flavio.js</div>
+                    </div>
+                    <div class="window-content">
+                        <pre><code class="language-javascript">
+// flavio.js
+class Developer {
+    constructor() {
+        this.name = "Flávio Caputo";
+        this.age = 17;
+        this.specialty = "WebGL & Full Stack";
+        this.location = "Brasil";
+    }
+    
+    skills = [
+        "WebGL/Three.js",
+        "Python/Flask",
+        "JavaScript ES6+",
+        "React & Vue",
+        "UI/UX Design"
+    ];
+    
+    build(project) {
+        return `🚀 Criando: ${project}`;
+    }
+    
+    get mission() {
+        return "Transformar ideias em realidade através do código.";
+    }
+}
+
+const flavio = new Developer();
+flavio.build("Next Big Thing");
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Apple Card Style -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">01</span>
+                    <span class="title-text">Sobre Mim</span>
+                </h2>
+                <p class="section-subtitle">Minha jornada na tecnologia</p>
+            </div>
+            
+            <div class="about-grid">
+                <!-- Left: Timeline -->
+                <div class="about-timeline">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021</div>
+                            <div class="timeline-content">
+                                <h3>Primeiro "Hello World!"</h3>
+                                <p>Início da jornada com Python e automação</p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                                <h3>Descoberta do WebGL</h3>
+                                <p>Fascinado por gráficos 3D no navegador</p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-content">
+                                <h3>ETEC - Informática</h3>
+                                <p>Formação técnica com foco em desenvolvimento web</p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h3>Projetos Complexos</h3>
+                                <p>Desenvolvimento de sistemas completos</p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Cards -->
+                <div class="about-cards">
+                    <div class="apple-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="card-title">Formação</h3>
+                        <p class="card-text">
+                            Técnico em Informática para Internet pela ETEC. 
+                            Conclusão em 2025 com foco em desenvolvimento moderno.
+                        </p>
+                    </div>
+                    
+                    <div class="apple-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="card-title">Filosofia</h3>
+                        <p class="card-text">
+                            Acredito em código limpo, design intuitivo e soluções 
+                            que realmente resolvem problemas.
+                        </p>
+                    </div>
+                    
+                    <div class="apple-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="card-title">Visão</h3>
+                        <p class="card-text">
+                            Criar experiências digitais que impressionam tanto 
+                            pela funcionalidade quanto pela estética.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section - Apple Gallery -->
+    <section id="work" class="section work-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">02</span>
+                    <span class="title-text">Projetos</span>
+                </h2>
+                <p class="section-subtitle">Trabalho selecionado</p>
+            </div>
+            
+            <div class="work-grid">
+                <!-- Project 1 -->
+                <a href="#" class="project-card" data-category="webgl">
+                    <div class="project-image">
+                        <div class="image-overlay">
+                            <span class="project-badge">WebGL</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Visualizador 3D</h3>
+                            <p class="project-description">
+                                Sistema avançado de visualização 3D no navegador
+                            </p>
+                            <div class="project-tech">
+                                <span>Three.js</span>
+                                <span>WebGL</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Project 2 -->
+                <a href="#" class="project-card" data-category="python">
+                    <div class="project-image">
+                        <div class="image-overlay">
+                            <span class="project-badge">Python</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Analytics Dashboard</h3>
+                            <p class="project-description">
+                                Dashboard para análise de dados em tempo real
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>D3.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Project 3 -->
+                <a href="#" class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="image-overlay">
+                            <span class="project-badge">Full Stack</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-commerce API</h3>
+                            <p class="project-description">
+                                Sistema completo de e-commerce com API REST
+                            </p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>React</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="section-footer">
+                <a href="https://github.com/flavio-caputo" class="btn btn-outline" target="_blank">
+                    <span>Ver mais no GitHub</span>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section - Apple Grid -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">03</span>
+                    <span class="title-text">Skills</span>
+                </h2>
+                <p class="section-subtitle">Competências técnicas</p>
+            </div>
+            
+            <div class="skills-container">
+                <!-- Left: Visual -->
+                <div class="skills-visual">
+                    <div class="skills-orb">
+                        <div class="orb-ring ring-1"></div>
+                        <div class="orb-ring ring-2"></div>
+                        <div class="orb-ring ring-3"></div>
+                        <div class="orb-center">
+                            <span>Dev</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Skills List -->
+                <div class="skills-list">
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-palette"></i>
+                            <span>Frontend</span>
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML/CSS</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>WebGL/Three.js</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-server"></i>
+                            <span>Backend</span>
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Node.js</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Apple Minimal -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">04</span>
+                    <span class="title-text">Contato</span>
+                </h2>
+                <p class="section-subtitle">Vamos criar algo incrível</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Left: Info -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Entre em contato</h3>
+                        <p>Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades para fazer parte de suas visões.</p>
+                        
+                        <div class="contact-details">
+                            <a href="mailto:flavio@caputo.dev" class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>flavio@caputo.dev</span>
+                            </a>
+                            <a href="https://github.com/flavio-caputo" class="contact-item" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>github.com/flavio-caputo</span>
+                            </a>
+                            <a href="https://linkedin.com/in/flavio-caputo" class="contact-item" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin.com/in/flavio-caputo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Form -->
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Assunto">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Apple Clean -->
+    <footer class="apple-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo -->
+                <div class="footer-logo">
+                    <span class="logo-symbol">◉</span>
+                    <span class="logo-text">caputo</span>
+                </div>
+                
+                <!-- Copyright -->
+                <p class="footer-copyright">
+                    &copy; 2024 Flávio Caputo. Todos os direitos reservados.
+                </p>
+                
+                <!-- Social -->
+                <div class="footer-social">
+                    <a href="https://github.com/flavio-caputo" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/flavio-caputo" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/flavio_caputo" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
