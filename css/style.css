@@ -465,22 +465,64 @@ body {
 }
 
 .window-content {
-    padding: var(--space-4);
-    background: var(--color-gray-6);
+  padding: var(--space-4);
+  background: var(--color-gray-6);
+  width: 100%;
+  max-width: 100%;        
+  overflow: visible;    
+}
+
+
+.window-content code {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-gray-1);
+  overflow-wrap: anywhere; 
 }
 
 .window-content pre {
-    margin: 0;
-    overflow-x: auto;
+  margin: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;        
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-break: break-word; 
+  word-wrap: break-word;   
+  hyphens: auto;
+  line-height: 1.6;
 }
 
-.window-content code {
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: var(--color-gray-1);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+
+.hero-preview {
+    position: absolute;
+    right: 190;
+    top: 500px;
+}
+
+@media (max-width: 1400px) {
+    .hero-preview {
+        top: 120px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .hero-preview {
+        top: 160px;
+    }
+}
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
